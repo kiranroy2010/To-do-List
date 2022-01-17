@@ -89,7 +89,7 @@ input, button {
   color: ghostwhite;
   transition: 0.4s;
   display: block;
-  width: 500px;
+  width: 100%;
 }
 #tasks .task .content .text:not(:read-only) {
   color: #FFE400;
