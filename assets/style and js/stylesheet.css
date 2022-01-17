@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins';
+  background-image: url("../background/subtle-prism.svg");
+}
+.mainBody {
+  margin-top: 4rem;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 10%;
+  margin-left: 10%;
+  border: 2px solid #eee;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+header {
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Norwester';
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+input, button {
+  background: none;
+  appearence: none;
+  border: none;
+  outline: none;
+}
+.task .content {
+	flex: 1 1 0%;
+}
+#new_task_input {
+  background-color: #35858B;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 20px;
+  color: #EEEEEE;
+}
+#new_task_submit {
+  border: 2px solid #072227;
+  border-radius: 16px;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#new_task_submit:hover {
+  background-color: #072227;
+  border: 2px solid #35858B;
+  color: #eee;
+}
+.task_list {
+  padding: 16px;
+}
+.task_list h2 {
+  font-family: 'Norwester';
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #399895;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+#tasks .task .content .text {
+  font-size: 20px;
+  color: ghostwhite;
+  transition: 0.4s;
+  display: block;
+	width: 100%;
+}
+#tasks .task .content .text:not(:read-only) {
+  color: #FFE400;
+}
+.task .action button {
+  margin: 0 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.task .action .edit {
+  color: #000770;
+}
+.task .action .delete {
+  color: #CA0000;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #BEE3E7;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #BEE3E7;
+  opacity: 1;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #BEE3E7;
+}
+::placeholder { /* Most modern browsers support this now. */
+  color: #BEE3E7;
+}
